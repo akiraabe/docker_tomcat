@@ -53,6 +53,7 @@ docker container stop <CONTAINER_ID>
 ```
 
 --- Dockerfile
+```
 FROM tomcat:10.0.6-jdk11-openjdk-slim
 WORKDIR /usr/local/tomcat/webapps/
 COPY sample.war /usr/local/tomcat/webapps/sample.war
@@ -62,8 +63,10 @@ COPY sample.war /usr/local/tomcat/webapps/sample.war
 # RUN wget http://tomcat.apache.org/tomcat-8.5-doc/appdev/sample/sample.war
 
 #EXPOSE 8080
-
+```
 --- get_war.sh
+```
 #!/bin/bash
 
 wget http://tomcat.apache.org/tomcat-8.5-doc/appdev/sample/sample.war
+```
